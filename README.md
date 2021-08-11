@@ -1,8 +1,8 @@
 # Data Compilation & Figures from the IPCC AR6 WG1
 
-© 2021 [Contributors](CONTRIBUTORS.md); licensed under the [BSD 3-Clause License](LICENSE).
+© 2021 [Contributors](CONTRIBUTORS.md); licensed under the [BSD-3-Clause License](LICENSE).
 
-[![license](https://img.shields.io/github/license/openscm/ar6-wg1-data-compilation)](https://github.com/IAMconsortium/pyam/blob/main/LICENSE)
+[![license](https://img.shields.io/github/license/openscm/AR6-WG1-Data-Compilation)](https://github.com/openscm/AR6-WG1-Data-Compilation/blob/main/LICENSE)
 
 ## Overview
 
