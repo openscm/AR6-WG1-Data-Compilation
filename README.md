@@ -1,4 +1,4 @@
-# Data Compilation & Figures for the IPCC AR6 WG1
+# Data Compilation & Figures from the IPCC AR6 WG1
 
 © 2021 Zebedee Nicholls & Daniel Huppmann; licensed under the [BSD 3-Clause License](LICENSE).
 
@@ -20,7 +20,7 @@ following the standard established by the Integrated Assessment Modeling Consort
 
 The format used in this repository is directly compatible with
 the **scmdata** and **pyam** Python packages (see dependencies below),
-but can be easily read with Excel or scripts written on other programming languages.
+but can be easily read with Excel or scripts written in other programming languages.
 
 ### Figures and analysis
 
