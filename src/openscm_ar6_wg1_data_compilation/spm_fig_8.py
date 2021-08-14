@@ -1,11 +1,5 @@
 """
-Processing of data from SPM Fig. 1
-
-Notes from compiling:
-
-- gmst_changes_model_and_obs.csv has a typo, "ensamble" should be "ensemble"
-- are panel b obs really HadCRUT4, look more like HadCRUT5?
-- the CMIP6 simulations stop before obs in the figure so why do they both have data here
+Processing of data from SPM Fig. 8
 """
 from pathlib import Path
 

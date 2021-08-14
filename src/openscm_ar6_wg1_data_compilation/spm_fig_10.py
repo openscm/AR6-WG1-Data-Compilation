@@ -1,5 +1,5 @@
 """
-Processing of data from SPM Fig. 4
+Processing of data from SPM Fig. 10
 """
 from pathlib import Path
 
