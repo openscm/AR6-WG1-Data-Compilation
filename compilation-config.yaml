@@ -1,0 +1,11 @@
+fig_wg1_spm1:
+  variables:
+      Surface Air Temperature Change|Median:
+      Surface Air Temperature Change|Mean:
+      Surface Air Temperature Change|5%:
+      Surface Air Temperature Change|95%:
+  annual_data: True
+  raw_data_path: data/raw/dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_01/v20210809
+  output_data_path: data/processed/fig-spm1/fig-spm1-timeseries.csv
+  compile_function: openscm_ar6_wg1_data_compilation.compile_spm_fig_1_timeseries
+  comment: Data comes from a range of sources (observations, paleoclimate and CMIP6 models)

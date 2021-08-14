@@ -125,7 +125,8 @@ def compile_spm_fig_1_timeseries(raw_data_path):
         [
             f"relative to {reference_period_start_year}-{reference_period_end_year}"
             in v["comments"]
-            for v in panel_b_metadata.values()
+            for k, v in panel_b_metadata.items()
+            if k != "Year"
         ]
     )
     panel_b_df["unit"] = panel_b_df["unit"].str.replace("Degrees C", unit)
