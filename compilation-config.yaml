@@ -9,3 +9,22 @@ fig_wg1_spm1:
   output_data_path: data/processed/fig-spm1/fig-spm1-timeseries.csv
   compile_function: openscm_ar6_wg1_data_compilation.compile_spm_fig_1_timeseries
   comment: Data comes from a range of sources (observations, paleoclimate and CMIP6 models)
+
+fig_wg1_spm8:
+  variables:
+      Surface Air Temperature Change|Mean:
+        comment: Should match Ch.4 assessment but I haven't checked yet
+      Surface Air Temperature Change|5%:
+        comment: Should match Ch.4 assessment but I haven't checked yet
+      Surface Air Temperature Change|95%:
+        comment: Should match Ch.4 assessment but I haven't checked yet
+      Ocean Surface pH|Mean:
+      Ocean Surface pH|5%:
+      Ocean Surface pH|95%:
+      Arctic Sea Icea Area|September|Mean:
+      Arctic Sea Icea Area|September|5%:
+      Arctic Sea Icea Area|September|95%:
+  annual_data: True
+  raw_data_path: data/raw/dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809
+  output_data_path: data/processed/fig-spm8/fig-spm8-timeseries.csv
+  compile_function: openscm_ar6_wg1_data_compilation.compile_spm_fig_8_timeseries
