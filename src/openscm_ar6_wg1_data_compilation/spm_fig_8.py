@@ -13,8 +13,7 @@ import pandas as pd
 import scmdata
 
 from .badc import read_badc
-from .utils import (convert_percentile_to_stats, convert_ssp_name,
-                    force_col_to_int)
+from .utils import convert_percentile_to_stats, convert_ssp_name, force_col_to_int
 
 
 def compile_spm_fig_8_timeseries(raw_data_path):

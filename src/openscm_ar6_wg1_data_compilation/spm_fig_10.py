@@ -49,7 +49,6 @@ def compile_spm_fig_10_timeseries(raw_data_path):
 
         raw["percentile"] = raw["variable"].apply(extract_percentile)
 
-
         def extract_reference_period(v):
             if v.startswith("Cumulative CO2 emissions since 1850"):
                 return "1850-1850"
@@ -59,13 +58,15 @@ def compile_spm_fig_10_timeseries(raw_data_path):
                 # stated in data README
                 return "1850-1900"
 
-
             raise NotImplementedError(v)
 
         raw["reference_period"] = raw["variable"].apply(extract_reference_period)
-        raw["reference_period_start_year"] = raw["reference_period"].apply(lambda x: x.split("-")[0])
-        raw["reference_period_end_year"] = raw["reference_period"].apply(lambda x: x.split("-")[-1])
-
+        raw["reference_period_start_year"] = raw["reference_period"].apply(
+            lambda x: x.split("-")[0]
+        )
+        raw["reference_period_end_year"] = raw["reference_period"].apply(
+            lambda x: x.split("-")[-1]
+        )
 
         def rename_variable(v):
             if v.startswith("Cumulative CO2 emissions"):
@@ -100,7 +101,9 @@ def compile_spm_fig_10_timeseries(raw_data_path):
 
     complete_output = scmdata.run_append(complete_output)
     complete_output["scenario"] = complete_output["scenario"].apply(convert_ssp_name)
-    complete_output["variable"] = complete_output["variable"] + complete_output["percentile"].apply(lambda x: "|{}".format(x) if x else x)
+    complete_output["variable"] = complete_output["variable"] + complete_output[
+        "percentile"
+    ].apply(lambda x: "|{}".format(x) if x else x)
     complete_output = complete_output.drop_meta(["percentile", "reference_period"])
 
     return complete_output

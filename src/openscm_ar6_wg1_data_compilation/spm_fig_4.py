@@ -59,10 +59,7 @@ def compile_spm_fig_4_timeseries(raw_data_path):
         raw = pd.read_csv(Path(raw_data_path) / filepath)
 
         raw_renamed_cols = (
-            raw
-            .rename({"years": "year"}, axis="columns")
-            .set_index("year")
-            .sort_index()
+            raw.rename({"years": "year"}, axis="columns").set_index("year").sort_index()
         )
         raw_renamed_cols.columns.name = "scenario"
         stacked = (
