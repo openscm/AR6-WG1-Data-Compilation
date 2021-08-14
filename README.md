@@ -30,8 +30,5 @@ and re-use in subsequent research and analysis.
 
 ## Dependencies
 
-The data and notebooks in this repository use the following packages: 
-
- - [pyam](https://pyam-iamc.readthedocs.io)
-   (note that this package is distributed on pypi as `pyam-iamc`)
- - [scmdata](https://scmdata.readthedocs.io) 
+The data and notebooks in this repository use the dependencies specified in `environment.yml`.
+These can be installed with conda: `conda env install -f environment.yml`.
