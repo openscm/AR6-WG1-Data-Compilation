@@ -1,11 +1,12 @@
 import importlib
 import os.path
-import yaml
 from collections import defaultdict
 
 import click
+import yaml
 
 # TODO: tests
+
 
 @click.group(name="openscm-ar6-wg1-data-compilation")
 def cli():
@@ -33,7 +34,7 @@ def compile(config_yaml):
         compile_func_str = cfg["compile_function"]
         print(f"Processing using {compile_func_str}")
         compile_func_str_split = compile_func_str.split(".")
-        compile_module_str = ".".join(compile_func_str_split[ : - 1])
+        compile_module_str = ".".join(compile_func_str_split[:-1])
 
         compile_module = importlib.import_module(compile_module_str)
         compile_func = getattr(compile_module, compile_func_str_split[-1])
@@ -50,16 +51,12 @@ def compile(config_yaml):
         cfg_variables = cfg["variables"].keys()
         for v in cfg_variables:
             if v not in output_variables:
-                error_msg = (
-                    f"{v} not in output_variables: {output_variables}"
-                )
+                error_msg = f"{v} not in output_variables: {output_variables}"
                 raise ValueError(error_msg)
 
         for v in output_variables:
             if v not in cfg_variables:
-                error_msg = (
-                    f"{v} not in config file: {config_yaml}"
-                )
+                error_msg = f"{v} not in config file: {config_yaml}"
                 raise ValueError(error_msg)
 
         # TODO: check that all variables (incl. units) agree with nomenclature

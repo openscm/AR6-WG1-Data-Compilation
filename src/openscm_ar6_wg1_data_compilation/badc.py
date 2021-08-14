@@ -49,9 +49,6 @@ def read_badc(path):
     out_df = pd.read_csv(
         path, skiprows=first_data_row, skipfooter=1, engine="python"
     ).rename(columns=columns)
-    metadata_out = {
-        columns[k]: v
-        for k, v in metadata.items()
-    }
+    metadata_out = {columns[k]: v for k, v in metadata.items()}
 
     return out_df, units, metadata_out

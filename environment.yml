@@ -13,5 +13,6 @@ dependencies:
   - xarray
   - notebook
   - nb_black
+  - isort
   - pytest
   - PyYAML

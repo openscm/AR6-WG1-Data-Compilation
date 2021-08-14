@@ -13,7 +13,8 @@ import pandas as pd
 import scmdata
 
 from .badc import read_badc
-from .utils import convert_ssp_name, convert_percentile_to_stats, force_col_to_int
+from .utils import (convert_percentile_to_stats, convert_ssp_name,
+                    force_col_to_int)
 
 
 def compile_spm_fig_8_timeseries(raw_data_path):
@@ -28,8 +29,8 @@ def compile_spm_fig_8_timeseries(raw_data_path):
                 region="World",
                 reference_period_start_year=1850,
                 reference_period_end_year=1900,
-                model="Ch.4 Assessed"
-            )
+                model="Ch.4 Assessed",
+            ),
         ),
         (
             Path("panel_b"),
@@ -38,8 +39,8 @@ def compile_spm_fig_8_timeseries(raw_data_path):
                 variable="Arctic Sea Icea Area|September",
                 unit="Mm^2",
                 region="World",
-                model="CMIP6 multi-model ensemble"
-            )
+                model="CMIP6 multi-model ensemble",
+            ),
         ),
         (
             Path("panel_c"),
@@ -48,8 +49,8 @@ def compile_spm_fig_8_timeseries(raw_data_path):
                 variable="Ocean Surface pH",
                 unit="dimensionless",
                 region="World",
-                model="CMIP6 multi-model ensemble"
-            )
+                model="CMIP6 multi-model ensemble",
+            ),
         ),
     )
 

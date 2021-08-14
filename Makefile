@@ -32,6 +32,16 @@ export PRINT_HELP_PYSCRIPT
 help:  ## show help messages for all targets
 	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
+.PHONY: format
+format: black isort ## auto-format the code
+
+.PHONY: black
+black: $(VENV_DIR)  ## apply black formatter
+	$(VENV_DIR)/bin/black --exclude _version.py setup.py src tests
+
+.PHONY: isort
+isort: $(VENV_DIR)  ## format the code
+	$(VENV_DIR)/bin/isort src tests setup.py
 
 .PHONY: setup
 setup: conda-environment  ## setup environment for running

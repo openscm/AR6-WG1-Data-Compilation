@@ -1,8 +1,7 @@
-import pandas as pd
 import numpy.testing as npt
+import pandas as pd
 
 from openscm_ar6_wg1_data_compilation import read_badc
-
 
 EXP_SIMPLE_DATA = pd.DataFrame(
     [
@@ -47,18 +46,12 @@ def test_parse_spm_fig1_panel_b(test_data_dir):
         "gsta_black_obs",
     ]
     npt.assert_allclose(
-        obs.loc[obs["Year"] == 1850, "gsta_brown_line_hist_ssp245"],
-        -0.047589067
+        obs.loc[obs["Year"] == 1850, "gsta_brown_line_hist_ssp245"], -0.047589067
     )
+    npt.assert_allclose(obs.loc[obs["Year"] == 2019, "gsta_black_obs"], 1.226)
     npt.assert_allclose(
-        obs.loc[obs["Year"] == 2019, "gsta_black_obs"],
-        1.226
+        obs.loc[obs["Year"] == 1852, "gsta_brown_shading_top_hist_ssp245"], 0.198392534
     )
-    npt.assert_allclose(
-        obs.loc[obs["Year"] == 1852, "gsta_brown_shading_top_hist_ssp245"],
-        0.198392534
-    )
-
 
     assert obs_units == {
         "Year": "Year",
@@ -68,7 +61,7 @@ def test_parse_spm_fig1_panel_b(test_data_dir):
         "gsta_brown_shading_top_hist_ssp245": "Degrees C",
         "gsta_green_line_hist_nat": "Degrees C",
         "gsta_green_shading_bottom_hist_nat": "Degrees C",
-        "gsta_green_shading_top_hist_nat": "Degrees C"
+        "gsta_green_shading_top_hist_nat": "Degrees C",
     }
 
     assert obs_meta["Year"]["coordinate_variable"] == "Year,Year"

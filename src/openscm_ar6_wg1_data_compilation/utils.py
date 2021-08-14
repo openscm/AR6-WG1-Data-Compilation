@@ -32,7 +32,6 @@ def convert_ssp_name(s):
     return mapping[s]
 
 
-
 def _force_to_int_representation(inp):
     if np.isnan(inp):
         return ""

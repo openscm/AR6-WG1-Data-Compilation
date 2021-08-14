@@ -1,17 +1,19 @@
-import versioneer
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 from setuptools.command.test import test as TestCommand
 
+import versioneer
 
 PACKAGE_NAME = "openscm_ar6_wg1_data_compilation"
 
-DESCRIPTION = (
-    "Code for compiling AR6 WG1 data for use with scmdata and related packages like pyam"
-)
+DESCRIPTION = "Code for compiling AR6 WG1 data for use with scmdata and related packages like pyam"
 
 SOURCE_DIR = "src"
 
-ENTRY_POINTS = {"console_scripts": ["openscm-ar6-wg1-data-compilation = openscm_ar6_wg1_data_compilation.cli:cli"]}
+ENTRY_POINTS = {
+    "console_scripts": [
+        "openscm-ar6-wg1-data-compilation = openscm_ar6_wg1_data_compilation.cli:cli"
+    ]
+}
 
 
 class Utils(TestCommand):

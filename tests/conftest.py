@@ -7,6 +7,7 @@ PROCESSED_DATA_DIR = ROOT_DATA_DIR / "processed"
 RAW_DATA_DIR = ROOT_DATA_DIR / "raw"
 TEST_DATA_DIR = Path(__file__).parent / "test-data"
 
+
 @pytest.fixture
 def processed_data_dir():
     return PROCESSED_DATA_DIR
