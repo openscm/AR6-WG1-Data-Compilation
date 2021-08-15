@@ -12,17 +12,6 @@ The data is available at the [CEDA Archive](https://data.ceda.ac.uk/badc/ar6_wg1
 under a Creative Commons CC-BY license, but the formats are quite diverse
 and not easy to handle.
 
-### Compiling the data
-
-The data is compiled using `openscm-ar6-wg1-data-compilation compile`.
-This command-line interface takes a single argument, `config_yaml`, which defines the data sources, which data is expected, where the raw data is stored, where the outputs should be written and also includes relevant metadata.
-An example is given in the root of this repository in `compilation-config.yaml`.
-Once the data is compiled, it will be in the specified output directories and ready for use.
-TODO: also spit out variables and definitions as part of compilation
-
-For information about the data directories, see `data/README`.
-
-
 ### Data resources
 
 This repository compiles the data into a uniform, csv-based data format
@@ -53,3 +42,12 @@ A high-level overview of the packages is below:
 
 The required packages can be installed with conda: `conda env create -f environment.yml`.
 
+## Compiling the data
+
+The data is compiled using `openscm-ar6-wg1-data-compilation compile`.
+This command-line interface takes a single argument, `config_yaml`, which defines the data sources, which data is expected, where the raw data is stored, where the outputs should be written and also includes relevant metadata.
+An example is given in the root of this repository in `compilation-config.yaml`.
+Once the data is compiled, it will be in the specified output directories and ready for use.
+TODO: also spit out variables and definitions as part of compilation
+
+For information about the data directories, see `data/README`.
