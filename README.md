@@ -42,4 +42,14 @@ and re-use in subsequent research and analysis.
 ## Dependencies
 
 The data and notebooks in this repository use the dependencies specified in `environment.yml`.
-These can be installed with conda: `conda env create -f environment.yml`.
+A high-level overview of the packages is below:
+ - [pyam](https://pyam-iamc.readthedocs.io)
+   (note that this package is distributed on pypi as `pyam-iamc`)
+ - [scmdata](https://scmdata.readthedocs.io)
+ - [seaborn](https://seaborn.pydata.org)
+ - [tqdm](https://tqdm.github.io)
+ - [xarray](https://xarray.pydata.org/en/stable)
+ - [notebook](https://jupyter-notebook.readthedocs.io/en/latest/?badge=latest)
+
+The required packages can be installed with conda: `conda env create -f environment.yml`.
+

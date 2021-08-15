@@ -6,7 +6,6 @@ dependencies:
   - python=3.7
   - pip>=21.0
   - pyam
-  - netCDF4
   - scmdata>=0.12.1
   - seaborn
   - tqdm
