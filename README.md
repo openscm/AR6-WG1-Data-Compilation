@@ -20,7 +20,7 @@ An example is given in the root of this repository in `compilation-config.yaml`.
 Once the data is compiled, it will be in the specified output directories and ready for use.
 TODO: also spit out variables and definitions as part of compilation
 
-For information about the data directories, see ``data/README``.
+For information about the data directories, see `data/README`.
 
 
 ### Data resources
@@ -42,4 +42,4 @@ and re-use in subsequent research and analysis.
 ## Dependencies
 
 The data and notebooks in this repository use the dependencies specified in `environment.yml`.
-These can be installed with conda: `conda env install -f environment.yml`.
+These can be installed with conda: `conda env create -f environment.yml`.
