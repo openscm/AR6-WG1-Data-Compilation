@@ -7,6 +7,3 @@ The `interim` directory contains any interim data products, as created by the co
 
 The `processed` directory contains the processed data products, also as created by the compilation scripts (see `README.md` in the root of this repository for instructions about compiling the data).
 All data in this directory is in a uniform csv-based format, ready for use directly with automated processing software and notably perfectly suited for use with the scmdata and pyam repositories.
-
-The `dummy` directory contains data in the format of data products, but where actual data as used in the AR6 WG1 is not yet available.
-This folder can be used to hold "dummy data" when preparing notebooks with figures and other analysis.
