@@ -1,0 +1,17 @@
+name: ar6-wg1-data-compilation
+channels:
+  - conda-forge
+  - default
+dependencies:
+  - python=3.7
+  - pip>=21.0
+  - pyam
+  - scmdata>=0.12.1
+  - seaborn
+  - tqdm
+  - xarray
+  - notebook
+  - nb_black
+  - isort
+  - pytest
+  - PyYAML

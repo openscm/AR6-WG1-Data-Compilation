@@ -30,8 +30,24 @@ and re-use in subsequent research and analysis.
 
 ## Dependencies
 
-The data and notebooks in this repository use the following packages: 
-
+The data and notebooks in this repository use the dependencies specified in `environment.yml`.
+A high-level overview of the packages is below:
  - [pyam](https://pyam-iamc.readthedocs.io)
    (note that this package is distributed on pypi as `pyam-iamc`)
- - [scmdata](https://scmdata.readthedocs.io) 
+ - [scmdata](https://scmdata.readthedocs.io)
+ - [seaborn](https://seaborn.pydata.org)
+ - [tqdm](https://tqdm.github.io)
+ - [xarray](https://xarray.pydata.org/en/stable)
+ - [notebook](https://jupyter-notebook.readthedocs.io/en/latest/?badge=latest)
+
+The required packages can be installed with conda: `conda env create -f environment.yml`.
+
+## Compiling the data
+
+The data is compiled using `openscm-ar6-wg1-data-compilation compile`.
+This command-line interface takes a single argument, `config_yaml`, which defines the data sources, which data is expected, where the raw data is stored, where the outputs should be written and also includes relevant metadata.
+An example is given in the root of this repository in `compilation-config.yaml`.
+Once the data is compiled, it will be in the specified output directories and ready for use.
+TODO: also spit out variables and definitions as part of compilation
+
+For information about the data directories, see `data/README`.

@@ -1,3 +1,7 @@
+download.sh
+data/raw
+data/interim
+
 # extras
 *~
 ~*
