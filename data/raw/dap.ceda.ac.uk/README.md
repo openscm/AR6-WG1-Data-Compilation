@@ -4,9 +4,12 @@ Alternately, the following script will download the data if `wget` is installed.
 
 ```bash
 #!/bin/bash
-OUTPUT_DIRECTORY="./"
+# To match our workflow, run this script from the same directory as
+# the `compilation-config.yaml` file in the root of the git repository
+OUTPUT_DIRECTORY="data/raw"
 
 wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_01/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
 wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_04/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
 wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
+wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
 ```
