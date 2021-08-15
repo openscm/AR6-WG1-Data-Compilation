@@ -5,7 +5,8 @@ channels:
 dependencies:
   - python=3.7
   - pip>=21.0
-  - pyam
+  - pyam>=1.1
+  - iam-units>=2021.8.12
   - scmdata>=0.12.1
   - seaborn
   - tqdm
