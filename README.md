@@ -28,6 +28,8 @@ This repository contains Jupyter notebooks that replicate several key figures
 of the IPCC AR6 WG1 report to facilitate reproducibility of the assessment
 and re-use in subsequent research and analysis.
 
+Please see the [notebooks folder](notebooks) for an overview! 
+
 ## Dependencies
 
 The data and notebooks in this repository use the dependencies specified in `environment.yml`.
