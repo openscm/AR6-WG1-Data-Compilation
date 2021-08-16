@@ -28,7 +28,7 @@ def compile_spm_fig_7_timeseries(raw_data_path):
     df = pyam.IamDataFrame(data, model="IAMs", region="World", value=variables, unit="PgC")
 
     # rename the variable
-    mapping = dict([(i, "Cumulative Carbon Stored|" + i.split(" ")[0].title()) for i in df.variable])
+    mapping = dict([(i, "Cumulative Carbon Uptake|" + i.split(" ")[0].title()) for i in df.variable])
     df.rename(variable=mapping, inplace=True)
 
     # Return via scmdata to make later checks work smoothly.
