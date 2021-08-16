@@ -25,7 +25,7 @@ def compile_spm_fig_7_timeseries(raw_data_path):
     data["scenario"] = data["scenario"].str.strip().str.lower().apply(convert_ssp_name)
 
     # cast to an IamDataFrame
-    df = pyam.IamDataFrame(data, model="IAMs", region="World", value=variables, unit="PgC")
+    df = pyam.IamDataFrame(data, model="IAMs", region="World", value=variables, unit="Pg C")
 
     # rename the variable
     mapping = dict([(i, "Cumulative Carbon Uptake|" + i.split(" ")[0].title()) for i in df.variable])

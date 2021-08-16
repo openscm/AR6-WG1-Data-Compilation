@@ -1,16 +1,16 @@
 model,region,scenario,unit,variable,2100
-IAMs,World,SSP1-1.9,PgC,Cumulative Carbon Uptake|Atmosphere,233.8377857
-IAMs,World,SSP1-1.9,PgC,Cumulative Carbon Uptake|Land,278.0873103
-IAMs,World,SSP1-1.9,PgC,Cumulative Carbon Uptake|Ocean,278.884875
-IAMs,World,SSP1-2.6,PgC,Cumulative Carbon Uptake|Atmosphere,344.2576441
-IAMs,World,SSP1-2.6,PgC,Cumulative Carbon Uptake|Land,326.8375223
-IAMs,World,SSP1-2.6,PgC,Cumulative Carbon Uptake|Ocean,313.893075
-IAMs,World,SSP2-4.5,PgC,Cumulative Carbon Uptake|Atmosphere,677.0286121
-IAMs,World,SSP2-4.5,PgC,Cumulative Carbon Uptake|Land,391.0471441
-IAMs,World,SSP2-4.5,PgC,Cumulative Carbon Uptake|Ocean,402.6084125
-IAMs,World,SSP3-7.0,PgC,Cumulative Carbon Uptake|Atmosphere,1235.961617
-IAMs,World,SSP3-7.0,PgC,Cumulative Carbon Uptake|Land,502.4465848
-IAMs,World,SSP3-7.0,PgC,Cumulative Carbon Uptake|Ocean,476.1247875
-IAMs,World,SSP5-8.5,PgC,Cumulative Carbon Uptake|Atmosphere,1802.993556
-IAMs,World,SSP5-8.5,PgC,Cumulative Carbon Uptake|Land,545.8766921
-IAMs,World,SSP5-8.5,PgC,Cumulative Carbon Uptake|Ocean,539.1818125
+IAMs,World,SSP1-1.9,Pg C,Cumulative Carbon Uptake|Atmosphere,233.8377857
+IAMs,World,SSP1-1.9,Pg C,Cumulative Carbon Uptake|Land,278.0873103
+IAMs,World,SSP1-1.9,Pg C,Cumulative Carbon Uptake|Ocean,278.884875
+IAMs,World,SSP1-2.6,Pg C,Cumulative Carbon Uptake|Atmosphere,344.2576441
+IAMs,World,SSP1-2.6,Pg C,Cumulative Carbon Uptake|Land,326.8375223
+IAMs,World,SSP1-2.6,Pg C,Cumulative Carbon Uptake|Ocean,313.893075
+IAMs,World,SSP2-4.5,Pg C,Cumulative Carbon Uptake|Atmosphere,677.0286121
+IAMs,World,SSP2-4.5,Pg C,Cumulative Carbon Uptake|Land,391.0471441
+IAMs,World,SSP2-4.5,Pg C,Cumulative Carbon Uptake|Ocean,402.6084125
+IAMs,World,SSP3-7.0,Pg C,Cumulative Carbon Uptake|Atmosphere,1235.961617
+IAMs,World,SSP3-7.0,Pg C,Cumulative Carbon Uptake|Land,502.4465848
+IAMs,World,SSP3-7.0,Pg C,Cumulative Carbon Uptake|Ocean,476.1247875
+IAMs,World,SSP5-8.5,Pg C,Cumulative Carbon Uptake|Atmosphere,1802.993556
+IAMs,World,SSP5-8.5,Pg C,Cumulative Carbon Uptake|Land,545.8766921
+IAMs,World,SSP5-8.5,Pg C,Cumulative Carbon Uptake|Ocean,539.1818125
