@@ -3,7 +3,9 @@
 This folder contains notebooks that replicate several key figures
 of the IPCC AR6 WG1 report to facilitate reproducibility of the assessment
 and re-use in subsequent research and analysis.
+
 Each notebook is named after the figure it reproduces.
+
 The last part of the notebook name shows the package which is used 
 for data-handling (and potentially plotting) in the notebook 
 e.g. if the notebook's name ends in `-scmdata` then the 

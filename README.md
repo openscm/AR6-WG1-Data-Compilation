@@ -28,6 +28,8 @@ This repository contains Jupyter notebooks that replicate several key figures
 of the IPCC AR6 WG1 report to facilitate reproducibility of the assessment
 and re-use in subsequent research and analysis.
 
+Please see the [notebooks folder](notebooks) for an overview! 
+
 ## Dependencies
 
 The data and notebooks in this repository use the dependencies specified in `environment.yml`.
@@ -51,3 +53,11 @@ Once the data is compiled, it will be in the specified output directories and re
 TODO: also spit out variables and definitions as part of compilation
 
 For information about the data directories, see `data/README`.
+
+## Acknowledgement
+
+We are grateful for the terrific work by [Robin Matthews](https://twitter.com/georobin),
+[Özge Yelekçi](https://twitter.com/OzgeYelekci), [Melissa Gomis](https://twitter.com/MelichatGo),
+[Lina Sitz](https://twitter.com/lina_sitz), the [CEDA Archive](https://www.ceda.ac.uk)
+and many researchers and WG1 TSU staff in compiling, validating and publishing the data
+under a license that permits re-use.
