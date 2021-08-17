@@ -21,6 +21,16 @@ fig_wg1_spm4:
   output_data_path: data/processed/fig-spm4/fig-spm4-timeseries.csv
   compile_function: openscm_ar6_wg1_data_compilation.compile_spm_fig_4_timeseries
 
+fig_wg1_spm7:
+  variables:
+      Cumulative Carbon Uptake|Atmosphere:
+      Cumulative Carbon Uptake|Land:
+      Cumulative Carbon Uptake|Ocean:
+  annual_data: True
+  raw_data_path: data/raw/dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_07/v20210809/
+  output_data_path: data/processed/fig-spm7/fig-spm7-timeseries.csv
+  compile_function: openscm_ar6_wg1_data_compilation.compile_spm_fig_7_timeseries
+
 fig_wg1_spm8:
   variables:
       Surface Air Temperature Change|Mean:

@@ -10,6 +10,7 @@ OUTPUT_DIRECTORY="data/raw"
 
 wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_01/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
 wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_04/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
+wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_07/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
 wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
 wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809/ --directory-prefix="${OUTPUT_DIRECTORY}"
 ```
